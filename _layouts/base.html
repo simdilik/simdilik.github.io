@@ -16,14 +16,15 @@
   <body>
     <div class="wrapper">
 
-      <div class="logo"></div>
+      <a href="/">
+        <div class="logo"></div>
+      </a>
+
       {% include menu.html %}
 
       {{ content }}
 
-      <footer>
-        <p><a href="https://github.com/simdilik">github.com/simdilik</a></p>
-      </footer>
+      {% include footer.html %}
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
