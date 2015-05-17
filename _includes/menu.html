@@ -6,14 +6,34 @@
 
     ul.menu > li.menuItem {
       display: inline-block;
-      width: 15%;
-      font-size: 18px;
+      min-width: 140px;
+      height: 40px;
+      text-align: center;
+    }
+
+    ul.menu > li.menuItem > a {
+      font-size: 16px;
       font-weight: bold;
+    }
+
+    ul.menu > li.menuItem > a > .logo {
+      display: inline-block;
+      position: absolute;
+      width: 140px;
+      height: 70px;
+      background-image: url('/images/logo1.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: none;
     }
 </style>
 <menu>
   <ul class="menu">
-    <li class="menuItem"><a href="/index.html">Ansayfa</a></li>
+    <li class="menuItem">
+      <a href="/index.html">
+        <div class="logo"></div>
+      </a>
+    </li>
     <li class="menuItem"><a href="/kim.html">Kim?</a></li>
     <li class="menuItem"><a href="/ne.html">Ne?</a></li>
     <li class="menuItem"><a href="/neden.html">Neden?</a></li>
