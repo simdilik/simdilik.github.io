@@ -38,10 +38,10 @@
       <img alt="Brand" src="/images/logo_small.jpg">
     </a>
   </li>
-  <li class="item"><a href="/kim.html">Kim?</a></li>
-  <li class="item"><a href="/ne.html">Ne?</a></li>
-  <li class="item"><a href="/neden.html">Neden?</a></li>
-  <li class="item"><a href="/nasil.html">Nasıl?</a></li>
-  <li class="item"><a href="/nerede.html">Nerede?</a></li>
+  <li class="item {% if page.title == 'kim' %}active{% endif %}"><a href="/kim.html">Kim?</a></li>
+  <li class="item {% if page.title == 'ne' %}active{% endif %}"><a href="/ne.html">Ne?</a></li>
+  <li class="item {% if page.title == 'neden' %}active{% endif %}"><a href="/neden.html">Neden?</a></li>
+  <li class="item {% if page.title == 'nasil' %}active{% endif %}"><a href="/nasil.html">Nasıl?</a></li>
+  <li class="item {% if page.title == 'nerede' %}active{% endif %}"><a href="/nerede.html">Nerede?</a></li>
 </ul>
 
